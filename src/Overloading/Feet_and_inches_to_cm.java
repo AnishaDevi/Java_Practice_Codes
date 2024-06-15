@@ -1,6 +1,7 @@
 package Overloading;
 import java.util.Scanner;
-public class Feet_and_inches_to_cm {
+public class Feet_and_inches_to_cm
+{
     public static double convertToCentimeters(double inches)
     {
         return inches * 2.54;
