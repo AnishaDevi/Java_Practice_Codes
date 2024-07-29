@@ -16,6 +16,7 @@ public class ReadCons
     public static void main(String[] args)
     {
         int currentYear = 2024;
+        //Scanner sc = new Scanner(System.in);
 
         System.out.println(getStringFromConsole(currentYear));
     }
