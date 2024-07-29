@@ -12,18 +12,18 @@ public class ReadScanner {
         System.out.println("What year were you born?");
 
         boolean validyob = false;
-        int age = 0;
+        int scanner_age = 0;
         do {
             System.out.println("Enter a year of birth >= " + (currentYear - 125) + " and <= " + (currentYear));
             try {
-                age = checkData(currentYear, sc.nextLine());
-                validyob = age < 0 ? false : true;
+                scanner_age = checkData(currentYear, sc.nextLine());
+                validyob = scanner_age < 0 ? false : true;
             }catch(NumberFormatException badUserDate){
                 System.out.println("Characters not allowed!!!try again..");
             }
         }while(!validyob);
 
-        return "So you are " + age + " years old";
+        return "So you are " + scanner_age + " years old";
     }
     public static int checkData(int currentYear , String yearOfBirth)
     {
@@ -42,3 +42,15 @@ public class ReadScanner {
         System.out.println(getStringFromScanner(currentYear));
     }
 }
+
+
+//Output
+//    Hi , What's your Name?
+//    Anna
+//    Hi Anna
+//    What year were you born?
+//    Enter a year of birth >= 1899 and <= 2024
+//            2025
+//    Enter a year of birth >= 1899 and <= 2024
+//            2000
+//    So you are 24 years old

@@ -21,3 +21,12 @@ public class ReadCons
         System.out.println(getStringFromConsole(currentYear));
     }
 }
+
+
+//Output(In Terminal Window)
+//    javac src/ReadingInputConsole/ReadCons.java
+//    java src/ReadingInputConsole/ReadCons.java
+//    Hi , What is your name? Anna
+//    Thanks Anna
+//    What year you were born? 2000
+//    So you are 24 years old
